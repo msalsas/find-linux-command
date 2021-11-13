@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Find the linux command{% endblock %}
+
+{% block body %}
+    <div>
+        <p>The linux command is:</p>
+
+        <pre>
+            {{ linux_command }}
+        </pre>
+
+        <div>
+            <a href="{{ path('app_main_index') }}">Go Back</a>
+        </div>
+    </div>
+{% endblock %}
