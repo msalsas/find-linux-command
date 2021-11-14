@@ -86,7 +86,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "heroku-postbuild" : "npm run build"
     },
     "conflict": {
         "symfony/symfony": "*"
