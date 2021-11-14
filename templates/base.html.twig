@@ -13,6 +13,16 @@
         {% endblock %}
     </head>
     <body>
+        <div class="header container" style="text-align:center;margin:auto;">
+            <a href="{{ path('app_main_index') }}" style="text-decoration:none;color:black">
+                <pre>
+_____ _           _   _     _                     ____                                          _
+|  ___(_)_ __   __| | | |   (_)_ __  _   ___  __  / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |
+| |_  | | '_ \ / _` | | |   | | '_ \| | | \ \/ / | |   / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` |
+|  _| | | | | | (_| | | |___| | | | | |_| |>  <  | |__| (_) | | | | | | | | | | | (_| | | | | (_| |
+|_|   |_|_| |_|\__,_| |_____|_|_| |_|\__,_/_/\_\  \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|</pre>
+            </a>
+        </div>
         <div class="container">
             {% block body %}{% endblock %}
         </div>

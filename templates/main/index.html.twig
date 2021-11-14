@@ -10,10 +10,10 @@
             <button class="nav-link active" id="find-files-tab" data-bs-toggle="tab" data-bs-target="#find-files" type="button" role="tab" aria-controls="find-files" aria-selected="true">Find Files</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            <button class="nav-link" id="find-text-tab" data-bs-toggle="tab" data-bs-target="#find-text" type="button" role="tab" aria-controls="find-text" aria-selected="false">Find text</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+            <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">About</button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
@@ -22,14 +22,29 @@
                 <p>Find files in a single path</p>
                 <p><i>Use * as wildcard</i></p>
                 <div class="container">
-                    {{ form_start(form) }}
-                    {{ form_widget(form) }}
-                    {{ form_end(form) }}
+                    {{ form_start(formFindFiles) }}
+                    {{ form_widget(formFindFiles) }}
+                    {{ form_end(formFindFiles) }}
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+        <div class="tab-pane fade" id="find-text" role="tabpanel" aria-labelledby="find-text-tab">
+            <div class="mt-3">
+                <p>Find text in files</p>
+                <p><i>Use * as wildcard</i></p>
+                <div class="container">
+                    {{ form_start(formFindText) }}
+                    {{ form_widget(formFindText) }}
+                    {{ form_end(formFindText) }}
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+            <div class="mt-3">
+                <p>Developer: Manolo Salsas - <a href="https://msalsas.com">msalsas.com</a></p>
+                <p>Repository: <a href="https://github.com/msalsas/find-linux-command">github.com/msalsas/find-linux-command</a></p>
+            </div>
+        </div>
     </div>
     <div>
 
