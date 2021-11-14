@@ -3,6 +3,8 @@ Find Linux Command
 
 Web application for finding linux commands to find files or text in files.
 
+[DEMO](https://enigmatic-waters-32318.herokuapp.com/)
+
 ## 1. Install
 
 ```bash
