@@ -77,6 +77,9 @@
         "symfony/polyfill-php72": "*"
     },
     "scripts": {
+        "start": "npm install",
+        "build": "npm run build",
+        "heroku-postbuild": "npm run build",
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
@@ -86,8 +89,7 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ],
-        "heroku-postbuild" : "npm run build"
+        ]
     },
     "conflict": {
         "symfony/symfony": "*"
