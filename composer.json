@@ -52,7 +52,7 @@
         "symfony/debug-bundle": "5.3.*",
         "symfony/maker-bundle": "^1.0",
         "symfony/phpunit-bridge": "^5.3",
-        "symfony/stopwatch": "5.3.*",
+        "symfony/stopwatch": "5.3.*"
     },
     "config": {
         "optimize-autoloader": true,
